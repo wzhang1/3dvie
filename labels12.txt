@@ -1,0 +1,311 @@
+[09:31:47] src/nnvm/legacy_json_util.cc:190: Loading symbol saved by previous version v0.8.0. Attempting to upgrade...
+[09:31:47] src/nnvm/legacy_json_util.cc:198: Symbol successfully upgraded!
+INFO:root:start with arguments Namespace(batch_size=32, benchmark=0, data_nthreads=48, data_train='data/image_tr12.lst', data_val='data/image_dev12.lst', disp_batches=20, dtype='float32', gpus='0,1,2,3', image_shape='3,320,320', kv_store='device', layer_before_fullc='flatten0', load_epoch=None, lr=0.003, lr_factor=0.1, lr_step_epochs='5, 10, 15, 25', max_random_aspect_ratio=0.25, max_random_h=36, max_random_l=50, max_random_rotate_angle=15, max_random_s=50, max_random_scale=1, max_random_shear_ratio=0.1, min_random_scale=1, model_prefix='model_level3/3dvie-resnet-18_12', mom=0.1, monitor=0, network=None, num_classes=2, num_epochs=30, num_examples=16763, num_layers=None, optimizer='sgd', pad_size=0, pretrained_model='model/resnet-18', random_crop=1, random_mirror=1, rgb_mean='123.68,116.779,103.939', test_io=0, top_k=2, wd=0)
+INFO:root:Using 48 threads for decoding...
+INFO:root:Set enviroment variable MXNET_CPU_WORKER_NTHREADS to a larger number to use more threads.
+INFO:root:ImageIter: loading image list data/image_tr12.lst...
+INFO:root:Using 48 threads for decoding...
+INFO:root:Set enviroment variable MXNET_CPU_WORKER_NTHREADS to a larger number to use more threads.
+INFO:root:ImageIter: loading image list data/image_dev12.lst...
+[09:31:52] src/operator/././cudnn_algoreg-inl.h:106: Running performance tests to find the best convolution algorithm, this can take a while... (setting env variable MXNET_CUDNN_AUTOTUNE_DEFAULT to 0 to disable)
+INFO:root:Epoch[0] Batch [20]	Speed: 54.44 samples/sec	accuracy=0.535714	top_k_accuracy_2=1.000000
+INFO:root:Epoch[0] Batch [40]	Speed: 54.75 samples/sec	accuracy=0.585938	top_k_accuracy_2=1.000000
+INFO:root:Epoch[0] Batch [60]	Speed: 54.72 samples/sec	accuracy=0.596875	top_k_accuracy_2=1.000000
+INFO:root:Epoch[0] Batch [80]	Speed: 54.66 samples/sec	accuracy=0.660937	top_k_accuracy_2=1.000000
+INFO:root:Epoch[0] Batch [100]	Speed: 54.16 samples/sec	accuracy=0.643750	top_k_accuracy_2=1.000000
+INFO:root:Epoch[0] Batch [120]	Speed: 53.86 samples/sec	accuracy=0.695312	top_k_accuracy_2=1.000000
+INFO:root:Epoch[0] Batch [140]	Speed: 53.73 samples/sec	accuracy=0.695312	top_k_accuracy_2=1.000000
+INFO:root:Epoch[0] Batch [160]	Speed: 52.84 samples/sec	accuracy=0.684375	top_k_accuracy_2=1.000000
+INFO:root:Epoch[0] Batch [180]	Speed: 53.55 samples/sec	accuracy=0.698438	top_k_accuracy_2=1.000000
+INFO:root:Epoch[0] Batch [200]	Speed: 53.34 samples/sec	accuracy=0.718750	top_k_accuracy_2=1.000000
+INFO:root:Epoch[0] Batch [220]	Speed: 53.55 samples/sec	accuracy=0.695312	top_k_accuracy_2=1.000000
+INFO:root:Epoch[0] Batch [240]	Speed: 54.47 samples/sec	accuracy=0.732812	top_k_accuracy_2=1.000000
+INFO:root:Epoch[0] Batch [260]	Speed: 53.65 samples/sec	accuracy=0.712500	top_k_accuracy_2=1.000000
+INFO:root:Epoch[0] Batch [280]	Speed: 53.99 samples/sec	accuracy=0.784375	top_k_accuracy_2=1.000000
+INFO:root:Epoch[0] Batch [300]	Speed: 53.89 samples/sec	accuracy=0.735938	top_k_accuracy_2=1.000000
+INFO:root:Epoch[0] Batch [320]	Speed: 53.47 samples/sec	accuracy=0.721875	top_k_accuracy_2=1.000000
+INFO:root:Epoch[0] Batch [340]	Speed: 53.79 samples/sec	accuracy=0.815625	top_k_accuracy_2=1.000000
+INFO:root:Epoch[0] Train-accuracy=0.643750
+INFO:root:Epoch[0] Train-top_k_accuracy_2=0.962500
+INFO:root:Epoch[0] Time cost=211.106
+INFO:root:Saved checkpoint to "model_level3/3dvie-resnet-18_12-0001.params"
+INFO:root:Epoch[0] Validation-accuracy=0.509152
+INFO:root:Epoch[0] Validation-top_k_accuracy_2=1.000000
+INFO:root:Epoch[1] Batch [20]	Speed: 52.69 samples/sec	accuracy=0.769345	top_k_accuracy_2=1.000000
+INFO:root:Epoch[1] Batch [40]	Speed: 53.58 samples/sec	accuracy=0.734375	top_k_accuracy_2=1.000000
+INFO:root:Epoch[1] Batch [60]	Speed: 53.37 samples/sec	accuracy=0.762500	top_k_accuracy_2=1.000000
+INFO:root:Epoch[1] Batch [80]	Speed: 53.93 samples/sec	accuracy=0.779687	top_k_accuracy_2=1.000000
+INFO:root:Epoch[1] Batch [100]	Speed: 53.69 samples/sec	accuracy=0.790625	top_k_accuracy_2=1.000000
+[09:37:30] src/nnvm/legacy_json_util.cc:190: Loading symbol saved by previous version v0.8.0. Attempting to upgrade...
+[09:37:30] src/nnvm/legacy_json_util.cc:198: Symbol successfully upgraded!
+INFO:root:start with arguments Namespace(batch_size=32, benchmark=0, data_nthreads=48, data_train='data/image_tr12.lst', data_val='data/image_dev12.lst', disp_batches=20, dtype='float32', gpus='0,1,2,3', image_shape='3,320,320', kv_store='device', layer_before_fullc='flatten0', load_epoch=None, lr=0.0003, lr_factor=0.1, lr_step_epochs='5, 10, 15, 25', max_random_aspect_ratio=0.25, max_random_h=36, max_random_l=50, max_random_rotate_angle=15, max_random_s=50, max_random_scale=1, max_random_shear_ratio=0.1, min_random_scale=1, model_prefix='model_level3/3dvie-resnet-18_12', mom=0.1, monitor=0, network=None, num_classes=2, num_epochs=30, num_examples=16763, num_layers=None, optimizer='sgd', pad_size=0, pretrained_model='model/resnet-18', random_crop=1, random_mirror=1, rgb_mean='123.68,116.779,103.939', test_io=0, top_k=2, wd=0)
+INFO:root:Using 48 threads for decoding...
+INFO:root:Set enviroment variable MXNET_CPU_WORKER_NTHREADS to a larger number to use more threads.
+INFO:root:ImageIter: loading image list data/image_tr12.lst...
+INFO:root:Using 48 threads for decoding...
+INFO:root:Set enviroment variable MXNET_CPU_WORKER_NTHREADS to a larger number to use more threads.
+INFO:root:ImageIter: loading image list data/image_dev12.lst...
+[09:37:33] src/operator/././cudnn_algoreg-inl.h:106: Running performance tests to find the best convolution algorithm, this can take a while... (setting env variable MXNET_CUDNN_AUTOTUNE_DEFAULT to 0 to disable)
+INFO:root:Epoch[0] Batch [20]	Speed: 54.54 samples/sec	accuracy=0.529762	top_k_accuracy_2=1.000000
+INFO:root:Epoch[0] Batch [40]	Speed: 53.06 samples/sec	accuracy=0.576562	top_k_accuracy_2=1.000000
+INFO:root:Epoch[0] Batch [60]	Speed: 53.61 samples/sec	accuracy=0.571875	top_k_accuracy_2=1.000000
+INFO:root:Epoch[0] Batch [80]	Speed: 53.14 samples/sec	accuracy=0.607812	top_k_accuracy_2=1.000000
+INFO:root:Epoch[0] Batch [100]	Speed: 52.99 samples/sec	accuracy=0.603125	top_k_accuracy_2=1.000000
+INFO:root:Epoch[0] Batch [120]	Speed: 53.21 samples/sec	accuracy=0.614062	top_k_accuracy_2=1.000000
+INFO:root:Epoch[0] Batch [140]	Speed: 53.14 samples/sec	accuracy=0.675000	top_k_accuracy_2=1.000000
+INFO:root:Epoch[0] Batch [160]	Speed: 53.49 samples/sec	accuracy=0.646875	top_k_accuracy_2=1.000000
+INFO:root:Epoch[0] Batch [180]	Speed: 53.60 samples/sec	accuracy=0.678125	top_k_accuracy_2=1.000000
+INFO:root:Epoch[0] Batch [200]	Speed: 53.14 samples/sec	accuracy=0.634375	top_k_accuracy_2=1.000000
+INFO:root:Epoch[0] Batch [220]	Speed: 53.73 samples/sec	accuracy=0.668750	top_k_accuracy_2=1.000000
+INFO:root:Epoch[0] Batch [240]	Speed: 57.39 samples/sec	accuracy=0.650000	top_k_accuracy_2=1.000000
+INFO:root:Epoch[0] Batch [260]	Speed: 59.18 samples/sec	accuracy=0.731250	top_k_accuracy_2=1.000000
+INFO:root:Epoch[0] Batch [280]	Speed: 58.97 samples/sec	accuracy=0.684375	top_k_accuracy_2=1.000000
+INFO:root:Epoch[0] Batch [300]	Speed: 58.26 samples/sec	accuracy=0.698438	top_k_accuracy_2=1.000000
+INFO:root:Epoch[0] Batch [320]	Speed: 59.25 samples/sec	accuracy=0.692187	top_k_accuracy_2=1.000000
+INFO:root:Epoch[0] Batch [340]	Speed: 58.44 samples/sec	accuracy=0.668750	top_k_accuracy_2=1.000000
+INFO:root:Epoch[0] Train-accuracy=0.618750
+INFO:root:Epoch[0] Train-top_k_accuracy_2=0.937500
+INFO:root:Epoch[0] Time cost=206.231
+INFO:root:Saved checkpoint to "model_level3/3dvie-resnet-18_12-0001.params"
+INFO:root:Epoch[0] Validation-accuracy=0.772321
+INFO:root:Epoch[0] Validation-top_k_accuracy_2=1.000000
+INFO:root:Epoch[1] Batch [20]	Speed: 59.01 samples/sec	accuracy=0.711310	top_k_accuracy_2=1.000000
+INFO:root:Epoch[1] Batch [40]	Speed: 59.20 samples/sec	accuracy=0.715625	top_k_accuracy_2=1.000000
+INFO:root:Epoch[1] Batch [60]	Speed: 59.44 samples/sec	accuracy=0.704688	top_k_accuracy_2=1.000000
+INFO:root:Epoch[1] Batch [80]	Speed: 58.65 samples/sec	accuracy=0.726562	top_k_accuracy_2=1.000000
+INFO:root:Epoch[1] Batch [100]	Speed: 59.71 samples/sec	accuracy=0.721875	top_k_accuracy_2=1.000000
+INFO:root:Epoch[1] Batch [120]	Speed: 58.45 samples/sec	accuracy=0.723437	top_k_accuracy_2=1.000000
+INFO:root:Epoch[1] Batch [140]	Speed: 58.22 samples/sec	accuracy=0.740625	top_k_accuracy_2=1.000000
+INFO:root:Epoch[1] Batch [160]	Speed: 58.30 samples/sec	accuracy=0.712500	top_k_accuracy_2=1.000000
+INFO:root:Epoch[1] Batch [180]	Speed: 57.45 samples/sec	accuracy=0.728125	top_k_accuracy_2=1.000000
+INFO:root:Epoch[1] Batch [200]	Speed: 58.18 samples/sec	accuracy=0.720313	top_k_accuracy_2=1.000000
+INFO:root:Epoch[1] Batch [220]	Speed: 59.37 samples/sec	accuracy=0.759375	top_k_accuracy_2=1.000000
+INFO:root:Epoch[1] Batch [240]	Speed: 58.98 samples/sec	accuracy=0.750000	top_k_accuracy_2=1.000000
+INFO:root:Epoch[1] Batch [260]	Speed: 58.85 samples/sec	accuracy=0.756250	top_k_accuracy_2=1.000000
+INFO:root:Epoch[1] Batch [280]	Speed: 58.51 samples/sec	accuracy=0.737500	top_k_accuracy_2=1.000000
+INFO:root:Epoch[1] Batch [300]	Speed: 57.85 samples/sec	accuracy=0.743750	top_k_accuracy_2=1.000000
+INFO:root:Epoch[1] Batch [320]	Speed: 58.20 samples/sec	accuracy=0.760938	top_k_accuracy_2=1.000000
+INFO:root:Epoch[1] Batch [340]	Speed: 59.48 samples/sec	accuracy=0.762500	top_k_accuracy_2=1.000000
+INFO:root:Epoch[1] Train-accuracy=0.781250
+INFO:root:Epoch[1] Train-top_k_accuracy_2=0.943750
+INFO:root:Epoch[1] Time cost=188.506
+INFO:root:Saved checkpoint to "model_level3/3dvie-resnet-18_12-0002.params"
+INFO:root:Epoch[1] Validation-accuracy=0.840625
+INFO:root:Epoch[1] Validation-top_k_accuracy_2=1.000000
+INFO:root:Epoch[2] Batch [20]	Speed: 58.34 samples/sec	accuracy=0.750000	top_k_accuracy_2=1.000000
+INFO:root:Epoch[2] Batch [40]	Speed: 59.34 samples/sec	accuracy=0.756250	top_k_accuracy_2=1.000000
+INFO:root:Epoch[2] Batch [60]	Speed: 59.28 samples/sec	accuracy=0.751563	top_k_accuracy_2=1.000000
+INFO:root:Epoch[2] Batch [80]	Speed: 58.54 samples/sec	accuracy=0.789062	top_k_accuracy_2=1.000000
+INFO:root:Epoch[2] Batch [100]	Speed: 58.57 samples/sec	accuracy=0.767188	top_k_accuracy_2=1.000000
+INFO:root:Epoch[2] Batch [120]	Speed: 58.30 samples/sec	accuracy=0.771875	top_k_accuracy_2=1.000000
+INFO:root:Epoch[2] Batch [140]	Speed: 57.83 samples/sec	accuracy=0.759375	top_k_accuracy_2=1.000000
+INFO:root:Epoch[2] Batch [160]	Speed: 58.67 samples/sec	accuracy=0.782813	top_k_accuracy_2=1.000000
+INFO:root:Epoch[2] Batch [180]	Speed: 58.62 samples/sec	accuracy=0.796875	top_k_accuracy_2=1.000000
+INFO:root:Epoch[2] Batch [200]	Speed: 59.21 samples/sec	accuracy=0.803125	top_k_accuracy_2=1.000000
+INFO:root:Epoch[2] Batch [220]	Speed: 58.12 samples/sec	accuracy=0.751563	top_k_accuracy_2=1.000000
+INFO:root:Epoch[2] Batch [240]	Speed: 58.18 samples/sec	accuracy=0.770312	top_k_accuracy_2=1.000000
+INFO:root:Epoch[2] Batch [260]	Speed: 58.29 samples/sec	accuracy=0.803125	top_k_accuracy_2=1.000000
+INFO:root:Epoch[2] Batch [280]	Speed: 58.78 samples/sec	accuracy=0.784375	top_k_accuracy_2=1.000000
+INFO:root:Epoch[2] Batch [300]	Speed: 58.75 samples/sec	accuracy=0.782813	top_k_accuracy_2=1.000000
+INFO:root:Epoch[2] Batch [320]	Speed: 58.32 samples/sec	accuracy=0.781250	top_k_accuracy_2=1.000000
+INFO:root:Epoch[2] Batch [340]	Speed: 58.87 samples/sec	accuracy=0.778125	top_k_accuracy_2=1.000000
+INFO:root:Epoch[2] Train-accuracy=0.618750
+INFO:root:Epoch[2] Train-top_k_accuracy_2=0.993750
+INFO:root:Epoch[2] Time cost=188.837
+INFO:root:Saved checkpoint to "model_level3/3dvie-resnet-18_12-0003.params"
+INFO:root:Epoch[2] Validation-accuracy=0.743750
+INFO:root:Epoch[2] Validation-top_k_accuracy_2=1.000000
+INFO:root:Epoch[3] Batch [20]	Speed: 60.13 samples/sec	accuracy=0.735119	top_k_accuracy_2=1.000000
+INFO:root:Epoch[3] Batch [40]	Speed: 59.13 samples/sec	accuracy=0.776563	top_k_accuracy_2=1.000000
+INFO:root:Epoch[3] Batch [60]	Speed: 59.89 samples/sec	accuracy=0.787500	top_k_accuracy_2=1.000000
+INFO:root:Epoch[3] Batch [80]	Speed: 58.47 samples/sec	accuracy=0.787500	top_k_accuracy_2=1.000000
+INFO:root:Epoch[3] Batch [100]	Speed: 58.82 samples/sec	accuracy=0.801562	top_k_accuracy_2=1.000000
+INFO:root:Epoch[3] Batch [120]	Speed: 58.44 samples/sec	accuracy=0.785937	top_k_accuracy_2=1.000000
+INFO:root:Epoch[3] Batch [140]	Speed: 58.79 samples/sec	accuracy=0.800000	top_k_accuracy_2=1.000000
+INFO:root:Epoch[3] Batch [160]	Speed: 58.26 samples/sec	accuracy=0.776563	top_k_accuracy_2=1.000000
+INFO:root:Epoch[3] Batch [180]	Speed: 58.53 samples/sec	accuracy=0.765625	top_k_accuracy_2=1.000000
+INFO:root:Epoch[3] Batch [200]	Speed: 59.07 samples/sec	accuracy=0.767188	top_k_accuracy_2=1.000000
+INFO:root:Epoch[3] Batch [220]	Speed: 58.28 samples/sec	accuracy=0.773438	top_k_accuracy_2=1.000000
+INFO:root:Epoch[3] Batch [240]	Speed: 58.24 samples/sec	accuracy=0.814063	top_k_accuracy_2=1.000000
+INFO:root:Epoch[3] Batch [260]	Speed: 58.71 samples/sec	accuracy=0.812500	top_k_accuracy_2=1.000000
+INFO:root:Epoch[3] Batch [280]	Speed: 58.36 samples/sec	accuracy=0.823438	top_k_accuracy_2=1.000000
+INFO:root:Epoch[3] Batch [300]	Speed: 59.32 samples/sec	accuracy=0.817187	top_k_accuracy_2=1.000000
+INFO:root:Epoch[3] Batch [320]	Speed: 58.05 samples/sec	accuracy=0.784375	top_k_accuracy_2=1.000000
+INFO:root:Epoch[3] Batch [340]	Speed: 58.91 samples/sec	accuracy=0.807813	top_k_accuracy_2=1.000000
+INFO:root:Epoch[3] Train-accuracy=0.600000
+INFO:root:Epoch[3] Train-top_k_accuracy_2=0.931250
+INFO:root:Epoch[3] Time cost=188.383
+INFO:root:Saved checkpoint to "model_level3/3dvie-resnet-18_12-0004.params"
+INFO:root:Epoch[3] Validation-accuracy=0.877232
+INFO:root:Epoch[3] Validation-top_k_accuracy_2=1.000000
+INFO:root:Epoch[4] Batch [20]	Speed: 59.49 samples/sec	accuracy=0.778274	top_k_accuracy_2=1.000000
+INFO:root:Epoch[4] Batch [40]	Speed: 59.63 samples/sec	accuracy=0.789062	top_k_accuracy_2=1.000000
+INFO:root:Epoch[4] Batch [60]	Speed: 58.18 samples/sec	accuracy=0.775000	top_k_accuracy_2=1.000000
+INFO:root:Epoch[4] Batch [80]	Speed: 58.80 samples/sec	accuracy=0.807813	top_k_accuracy_2=1.000000
+INFO:root:Epoch[4] Batch [100]	Speed: 58.92 samples/sec	accuracy=0.810937	top_k_accuracy_2=1.000000
+INFO:root:Epoch[4] Batch [120]	Speed: 58.73 samples/sec	accuracy=0.818750	top_k_accuracy_2=1.000000
+INFO:root:Epoch[4] Batch [140]	Speed: 58.31 samples/sec	accuracy=0.775000	top_k_accuracy_2=1.000000
+INFO:root:Epoch[4] Batch [160]	Speed: 58.93 samples/sec	accuracy=0.809375	top_k_accuracy_2=1.000000
+INFO:root:Epoch[4] Batch [180]	Speed: 58.22 samples/sec	accuracy=0.795312	top_k_accuracy_2=1.000000
+INFO:root:Epoch[4] Batch [200]	Speed: 58.94 samples/sec	accuracy=0.814063	top_k_accuracy_2=1.000000
+INFO:root:Epoch[4] Batch [220]	Speed: 59.17 samples/sec	accuracy=0.815625	top_k_accuracy_2=1.000000
+INFO:root:Epoch[4] Batch [240]	Speed: 58.42 samples/sec	accuracy=0.815625	top_k_accuracy_2=1.000000
+INFO:root:Epoch[4] Batch [260]	Speed: 58.26 samples/sec	accuracy=0.800000	top_k_accuracy_2=1.000000
+INFO:root:Epoch[4] Batch [280]	Speed: 58.58 samples/sec	accuracy=0.781250	top_k_accuracy_2=1.000000
+INFO:root:Epoch[4] Batch [300]	Speed: 57.52 samples/sec	accuracy=0.810937	top_k_accuracy_2=1.000000
+INFO:root:Epoch[4] Batch [320]	Speed: 57.91 samples/sec	accuracy=0.801562	top_k_accuracy_2=1.000000
+INFO:root:Epoch[4] Batch [340]	Speed: 58.39 samples/sec	accuracy=0.806250	top_k_accuracy_2=1.000000
+INFO:root:Epoch[4] Train-accuracy=0.793750
+INFO:root:Epoch[4] Train-top_k_accuracy_2=0.968750
+INFO:root:Epoch[4] Time cost=188.889
+INFO:root:Saved checkpoint to "model_level3/3dvie-resnet-18_12-0005.params"
+INFO:root:Epoch[4] Validation-accuracy=0.874554
+INFO:root:Epoch[4] Validation-top_k_accuracy_2=1.000000
+INFO:root:Epoch[5] Batch [20]	Speed: 59.52 samples/sec	accuracy=0.800595	top_k_accuracy_2=1.000000
+INFO:root:Epoch[5] Batch [40]	Speed: 59.01 samples/sec	accuracy=0.767188	top_k_accuracy_2=1.000000
+INFO:root:Epoch[5] Batch [60]	Speed: 59.54 samples/sec	accuracy=0.806250	top_k_accuracy_2=1.000000
+INFO:root:Epoch[5] Batch [80]	Speed: 58.99 samples/sec	accuracy=0.814063	top_k_accuracy_2=1.000000
+INFO:root:Epoch[5] Batch [100]	Speed: 58.05 samples/sec	accuracy=0.792188	top_k_accuracy_2=1.000000
+INFO:root:Epoch[5] Batch [120]	Speed: 58.52 samples/sec	accuracy=0.798438	top_k_accuracy_2=1.000000
+INFO:root:Epoch[5] Batch [140]	Speed: 59.34 samples/sec	accuracy=0.810937	top_k_accuracy_2=1.000000
+INFO:root:Epoch[5] Batch [160]	Speed: 57.84 samples/sec	accuracy=0.798438	top_k_accuracy_2=1.000000
+INFO:root:Epoch[5] Batch [180]	Speed: 58.60 samples/sec	accuracy=0.815625	top_k_accuracy_2=1.000000
+INFO:root:Epoch[5] Batch [200]	Speed: 58.77 samples/sec	accuracy=0.814063	top_k_accuracy_2=1.000000
+INFO:root:Epoch[5] Batch [220]	Speed: 58.14 samples/sec	accuracy=0.803125	top_k_accuracy_2=1.000000
+INFO:root:Epoch[5] Batch [240]	Speed: 58.05 samples/sec	accuracy=0.820312	top_k_accuracy_2=1.000000
+INFO:root:Epoch[5] Batch [260]	Speed: 58.35 samples/sec	accuracy=0.823438	top_k_accuracy_2=1.000000
+INFO:root:Epoch[5] Batch [280]	Speed: 58.33 samples/sec	accuracy=0.789062	top_k_accuracy_2=1.000000
+INFO:root:Epoch[5] Batch [300]	Speed: 58.70 samples/sec	accuracy=0.810937	top_k_accuracy_2=1.000000
+INFO:root:Epoch[5] Batch [320]	Speed: 58.41 samples/sec	accuracy=0.831250	top_k_accuracy_2=1.000000
+INFO:root:Epoch[5] Batch [340]	Speed: 58.65 samples/sec	accuracy=0.812500	top_k_accuracy_2=1.000000
+INFO:root:Epoch[5] Train-accuracy=0.718750
+INFO:root:Epoch[5] Train-top_k_accuracy_2=0.981250
+INFO:root:Epoch[5] Time cost=188.749
+INFO:root:Saved checkpoint to "model_level3/3dvie-resnet-18_12-0006.params"
+INFO:root:Epoch[5] Validation-accuracy=0.876339
+INFO:root:Epoch[5] Validation-top_k_accuracy_2=1.000000
+INFO:root:Epoch[6] Batch [20]	Speed: 59.17 samples/sec	accuracy=0.797619	top_k_accuracy_2=1.000000
+INFO:root:Epoch[6] Batch [40]	Speed: 59.98 samples/sec	accuracy=0.843750	top_k_accuracy_2=1.000000
+INFO:root:Epoch[6] Batch [60]	Speed: 59.73 samples/sec	accuracy=0.845313	top_k_accuracy_2=1.000000
+INFO:root:Epoch[6] Batch [80]	Speed: 58.53 samples/sec	accuracy=0.812500	top_k_accuracy_2=1.000000
+INFO:root:Epoch[6] Batch [100]	Speed: 58.27 samples/sec	accuracy=0.828125	top_k_accuracy_2=1.000000
+INFO:root:Epoch[6] Batch [120]	Speed: 59.23 samples/sec	accuracy=0.837500	top_k_accuracy_2=1.000000
+INFO:root:Epoch[6] Batch [140]	Speed: 59.32 samples/sec	accuracy=0.812500	top_k_accuracy_2=1.000000
+INFO:root:Epoch[6] Batch [160]	Speed: 58.52 samples/sec	accuracy=0.807813	top_k_accuracy_2=1.000000
+INFO:root:Epoch[6] Batch [180]	Speed: 58.32 samples/sec	accuracy=0.820312	top_k_accuracy_2=1.000000
+INFO:root:Epoch[6] Batch [200]	Speed: 58.82 samples/sec	accuracy=0.806250	top_k_accuracy_2=1.000000
+INFO:root:Epoch[6] Batch [220]	Speed: 57.74 samples/sec	accuracy=0.817187	top_k_accuracy_2=1.000000
+INFO:root:Epoch[6] Batch [240]	Speed: 58.90 samples/sec	accuracy=0.817187	top_k_accuracy_2=1.000000
+INFO:root:Epoch[6] Batch [260]	Speed: 58.09 samples/sec	accuracy=0.778125	top_k_accuracy_2=1.000000
+INFO:root:Epoch[6] Batch [280]	Speed: 58.30 samples/sec	accuracy=0.795312	top_k_accuracy_2=1.000000
+INFO:root:Epoch[6] Batch [300]	Speed: 59.44 samples/sec	accuracy=0.823438	top_k_accuracy_2=1.000000
+INFO:root:Epoch[6] Batch [320]	Speed: 58.27 samples/sec	accuracy=0.862500	top_k_accuracy_2=1.000000
+INFO:root:Epoch[6] Batch [340]	Speed: 57.98 samples/sec	accuracy=0.842187	top_k_accuracy_2=1.000000
+INFO:root:Epoch[6] Train-accuracy=0.681250
+INFO:root:Epoch[6] Train-top_k_accuracy_2=0.993750
+INFO:root:Epoch[6] Time cost=188.355
+INFO:root:Saved checkpoint to "model_level3/3dvie-resnet-18_12-0007.params"
+INFO:root:Epoch[6] Validation-accuracy=0.884152
+INFO:root:Epoch[6] Validation-top_k_accuracy_2=1.000000
+INFO:root:Epoch[7] Batch [20]	Speed: 59.30 samples/sec	accuracy=0.809524	top_k_accuracy_2=1.000000
+INFO:root:Epoch[7] Batch [40]	Speed: 58.67 samples/sec	accuracy=0.818750	top_k_accuracy_2=1.000000
+INFO:root:Epoch[7] Batch [60]	Speed: 58.67 samples/sec	accuracy=0.820312	top_k_accuracy_2=1.000000
+INFO:root:Epoch[7] Batch [80]	Speed: 59.60 samples/sec	accuracy=0.828125	top_k_accuracy_2=1.000000
+INFO:root:Epoch[7] Batch [100]	Speed: 58.11 samples/sec	accuracy=0.810937	top_k_accuracy_2=1.000000
+INFO:root:Epoch[7] Batch [120]	Speed: 58.85 samples/sec	accuracy=0.820312	top_k_accuracy_2=1.000000
+INFO:root:Epoch[7] Batch [140]	Speed: 59.08 samples/sec	accuracy=0.832812	top_k_accuracy_2=1.000000
+INFO:root:Epoch[7] Batch [160]	Speed: 58.54 samples/sec	accuracy=0.835938	top_k_accuracy_2=1.000000
+INFO:root:Epoch[7] Batch [180]	Speed: 58.36 samples/sec	accuracy=0.843750	top_k_accuracy_2=1.000000
+INFO:root:Update[2616]: Change learning rate to 3.00000e-05
+INFO:root:Epoch[7] Batch [200]	Speed: 59.31 samples/sec	accuracy=0.835938	top_k_accuracy_2=1.000000
+INFO:root:Epoch[7] Batch [220]	Speed: 57.86 samples/sec	accuracy=0.829688	top_k_accuracy_2=1.000000
+INFO:root:Epoch[7] Batch [240]	Speed: 58.36 samples/sec	accuracy=0.839063	top_k_accuracy_2=1.000000
+INFO:root:Epoch[7] Batch [260]	Speed: 58.77 samples/sec	accuracy=0.848437	top_k_accuracy_2=1.000000
+INFO:root:Epoch[7] Batch [280]	Speed: 59.59 samples/sec	accuracy=0.823438	top_k_accuracy_2=1.000000
+INFO:root:Epoch[7] Batch [300]	Speed: 58.21 samples/sec	accuracy=0.834375	top_k_accuracy_2=1.000000
+INFO:root:Epoch[7] Batch [320]	Speed: 57.18 samples/sec	accuracy=0.846875	top_k_accuracy_2=1.000000
+INFO:root:Epoch[7] Batch [340]	Speed: 57.74 samples/sec	accuracy=0.840625	top_k_accuracy_2=1.000000
+INFO:root:Epoch[7] Train-accuracy=0.706250
+INFO:root:Epoch[7] Train-top_k_accuracy_2=0.943750
+INFO:root:Epoch[7] Time cost=188.818
+INFO:root:Saved checkpoint to "model_level3/3dvie-resnet-18_12-0008.params"
+INFO:root:Epoch[7] Validation-accuracy=0.897098
+INFO:root:Epoch[7] Validation-top_k_accuracy_2=1.000000
+INFO:root:Epoch[8] Batch [20]	Speed: 58.65 samples/sec	accuracy=0.821429	top_k_accuracy_2=1.000000
+INFO:root:Epoch[8] Batch [40]	Speed: 59.98 samples/sec	accuracy=0.814063	top_k_accuracy_2=1.000000
+INFO:root:Epoch[8] Batch [60]	Speed: 58.65 samples/sec	accuracy=0.851562	top_k_accuracy_2=1.000000
+INFO:root:Epoch[8] Batch [80]	Speed: 59.40 samples/sec	accuracy=0.835938	top_k_accuracy_2=1.000000
+INFO:root:Epoch[8] Batch [100]	Speed: 57.95 samples/sec	accuracy=0.814063	top_k_accuracy_2=1.000000
+INFO:root:Epoch[8] Batch [120]	Speed: 58.74 samples/sec	accuracy=0.828125	top_k_accuracy_2=1.000000
+INFO:root:Epoch[8] Batch [140]	Speed: 58.02 samples/sec	accuracy=0.835938	top_k_accuracy_2=1.000000
+INFO:root:Epoch[8] Batch [160]	Speed: 58.08 samples/sec	accuracy=0.843750	top_k_accuracy_2=1.000000
+INFO:root:Epoch[8] Batch [180]	Speed: 58.55 samples/sec	accuracy=0.812500	top_k_accuracy_2=1.000000
+INFO:root:Epoch[8] Batch [200]	Speed: 58.10 samples/sec	accuracy=0.829688	top_k_accuracy_2=1.000000
+INFO:root:Epoch[8] Batch [220]	Speed: 58.34 samples/sec	accuracy=0.837500	top_k_accuracy_2=1.000000
+INFO:root:Epoch[8] Batch [240]	Speed: 58.51 samples/sec	accuracy=0.826562	top_k_accuracy_2=1.000000
+INFO:root:Epoch[8] Batch [260]	Speed: 58.45 samples/sec	accuracy=0.842187	top_k_accuracy_2=1.000000
+INFO:root:Epoch[8] Batch [280]	Speed: 58.88 samples/sec	accuracy=0.832812	top_k_accuracy_2=1.000000
+INFO:root:Epoch[8] Batch [300]	Speed: 59.70 samples/sec	accuracy=0.832812	top_k_accuracy_2=1.000000
+INFO:root:Epoch[8] Batch [320]	Speed: 58.32 samples/sec	accuracy=0.842187	top_k_accuracy_2=1.000000
+INFO:root:Epoch[8] Batch [340]	Speed: 58.17 samples/sec	accuracy=0.857812	top_k_accuracy_2=1.000000
+INFO:root:Epoch[8] Train-accuracy=0.675000
+INFO:root:Epoch[8] Train-top_k_accuracy_2=0.943750
+INFO:root:Epoch[8] Time cost=188.919
+INFO:root:Saved checkpoint to "model_level3/3dvie-resnet-18_12-0009.params"
+INFO:root:Epoch[8] Validation-accuracy=0.906250
+INFO:root:Epoch[8] Validation-top_k_accuracy_2=1.000000
+INFO:root:Epoch[9] Batch [20]	Speed: 58.56 samples/sec	accuracy=0.818452	top_k_accuracy_2=1.000000
+INFO:root:Epoch[9] Batch [40]	Speed: 59.67 samples/sec	accuracy=0.857812	top_k_accuracy_2=1.000000
+INFO:root:Epoch[9] Batch [60]	Speed: 59.48 samples/sec	accuracy=0.815625	top_k_accuracy_2=1.000000
+INFO:root:Epoch[9] Batch [80]	Speed: 58.45 samples/sec	accuracy=0.831250	top_k_accuracy_2=1.000000
+INFO:root:Epoch[9] Batch [100]	Speed: 58.39 samples/sec	accuracy=0.829688	top_k_accuracy_2=1.000000
+INFO:root:Epoch[9] Batch [120]	Speed: 58.06 samples/sec	accuracy=0.862500	top_k_accuracy_2=1.000000
+INFO:root:Epoch[9] Batch [140]	Speed: 58.16 samples/sec	accuracy=0.846875	top_k_accuracy_2=1.000000
+INFO:root:Epoch[9] Batch [160]	Speed: 59.20 samples/sec	accuracy=0.798438	top_k_accuracy_2=1.000000
+INFO:root:Epoch[9] Batch [180]	Speed: 58.53 samples/sec	accuracy=0.829688	top_k_accuracy_2=1.000000
+INFO:root:Epoch[9] Batch [200]	Speed: 58.91 samples/sec	accuracy=0.835938	top_k_accuracy_2=1.000000
+INFO:root:Epoch[9] Batch [220]	Speed: 57.90 samples/sec	accuracy=0.854688	top_k_accuracy_2=1.000000
+INFO:root:Epoch[9] Batch [240]	Speed: 58.95 samples/sec	accuracy=0.837500	top_k_accuracy_2=1.000000
+INFO:root:Epoch[9] Batch [260]	Speed: 57.99 samples/sec	accuracy=0.837500	top_k_accuracy_2=1.000000
+INFO:root:Epoch[9] Batch [280]	Speed: 58.51 samples/sec	accuracy=0.850000	top_k_accuracy_2=1.000000
+INFO:root:Epoch[9] Batch [300]	Speed: 58.16 samples/sec	accuracy=0.823438	top_k_accuracy_2=1.000000
+INFO:root:Epoch[9] Batch [320]	Speed: 58.93 samples/sec	accuracy=0.839063	top_k_accuracy_2=1.000000
+INFO:root:Epoch[9] Batch [340]	Speed: 59.32 samples/sec	accuracy=0.879687	top_k_accuracy_2=1.000000
+INFO:root:Epoch[9] Train-accuracy=0.731250
+INFO:root:Epoch[9] Train-top_k_accuracy_2=0.975000
+INFO:root:Epoch[9] Time cost=188.664
+INFO:root:Saved checkpoint to "model_level3/3dvie-resnet-18_12-0010.params"
+INFO:root:Epoch[9] Validation-accuracy=0.892188
+INFO:root:Epoch[9] Validation-top_k_accuracy_2=1.000000
+INFO:root:Epoch[10] Batch [20]	Speed: 58.81 samples/sec	accuracy=0.839286	top_k_accuracy_2=1.000000
+INFO:root:Epoch[10] Batch [40]	Speed: 58.86 samples/sec	accuracy=0.845313	top_k_accuracy_2=1.000000
+INFO:root:Epoch[10] Batch [60]	Speed: 58.69 samples/sec	accuracy=0.846875	top_k_accuracy_2=1.000000
+INFO:root:Epoch[10] Batch [80]	Speed: 58.66 samples/sec	accuracy=0.839063	top_k_accuracy_2=1.000000
+INFO:root:Epoch[10] Batch [100]	Speed: 58.26 samples/sec	accuracy=0.817187	top_k_accuracy_2=1.000000
+INFO:root:Epoch[10] Batch [120]	Speed: 59.23 samples/sec	accuracy=0.851562	top_k_accuracy_2=1.000000
+INFO:root:Epoch[10] Batch [140]	Speed: 59.07 samples/sec	accuracy=0.846875	top_k_accuracy_2=1.000000
+INFO:root:Epoch[10] Batch [160]	Speed: 57.65 samples/sec	accuracy=0.820312	top_k_accuracy_2=1.000000
+INFO:root:Epoch[10] Batch [180]	Speed: 57.82 samples/sec	accuracy=0.864062	top_k_accuracy_2=1.000000
+INFO:root:Epoch[10] Batch [200]	Speed: 58.27 samples/sec	accuracy=0.864062	top_k_accuracy_2=1.000000
+INFO:root:Epoch[10] Batch [220]	Speed: 58.08 samples/sec	accuracy=0.826562	top_k_accuracy_2=1.000000
+INFO:root:Epoch[10] Batch [240]	Speed: 58.17 samples/sec	accuracy=0.871875	top_k_accuracy_2=1.000000
+INFO:root:Epoch[10] Batch [260]	Speed: 58.35 samples/sec	accuracy=0.848437	top_k_accuracy_2=1.000000
+INFO:root:Epoch[10] Batch [280]	Speed: 58.68 samples/sec	accuracy=0.835938	top_k_accuracy_2=1.000000
+INFO:root:Epoch[10] Batch [300]	Speed: 57.98 samples/sec	accuracy=0.864062	top_k_accuracy_2=1.000000
+INFO:root:Epoch[10] Batch [320]	Speed: 58.38 samples/sec	accuracy=0.818750	top_k_accuracy_2=1.000000
+INFO:root:Epoch[10] Batch [340]	Speed: 58.46 samples/sec	accuracy=0.817187	top_k_accuracy_2=1.000000
+INFO:root:Epoch[10] Train-accuracy=0.831250
+INFO:root:Epoch[10] Train-top_k_accuracy_2=0.981250
+INFO:root:Epoch[10] Time cost=189.405
+INFO:root:Saved checkpoint to "model_level3/3dvie-resnet-18_12-0011.params"
+INFO:root:Epoch[10] Validation-accuracy=0.903348
+INFO:root:Epoch[10] Validation-top_k_accuracy_2=1.000000
+INFO:root:Epoch[11] Batch [20]	Speed: 58.32 samples/sec	accuracy=0.828869	top_k_accuracy_2=1.000000
+INFO:root:Epoch[11] Batch [40]	Speed: 58.89 samples/sec	accuracy=0.840625	top_k_accuracy_2=1.000000
+INFO:root:Epoch[11] Batch [60]	Speed: 57.84 samples/sec	accuracy=0.837500	top_k_accuracy_2=1.000000
+INFO:root:Epoch[11] Batch [80]	Speed: 59.27 samples/sec	accuracy=0.837500	top_k_accuracy_2=1.000000
+INFO:root:Epoch[11] Batch [100]	Speed: 58.29 samples/sec	accuracy=0.851562	top_k_accuracy_2=1.000000
+INFO:root:Epoch[11] Batch [120]	Speed: 58.83 samples/sec	accuracy=0.828125	top_k_accuracy_2=1.000000
+INFO:root:Epoch[11] Batch [140]	Speed: 57.34 samples/sec	accuracy=0.826562	top_k_accuracy_2=1.000000
+INFO:root:Epoch[11] Batch [160]	Speed: 58.42 samples/sec	accuracy=0.846875	top_k_accuracy_2=1.000000
+INFO:root:Epoch[11] Batch [180]	Speed: 58.21 samples/sec	accuracy=0.854688	top_k_accuracy_2=1.000000
