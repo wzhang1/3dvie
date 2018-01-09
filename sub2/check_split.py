@@ -24,9 +24,9 @@ with open("../sub1/new500x500-ep11.csv") as fp:
         l_array = line.rstrip().split(",")
         #print(labels[l_array[0]])
         #print(l_array)
-        predict1 = int(l_array[1][0])
+        predict1 = int(l_array[1][0]) + 1
         #print(predict)
-        predict2 = int(l_array[1][2])
+        predict2 = int(l_array[1][2]) + 1
         #print(predict2)
         
         if (predict2 == labels[l_array[0]] or predict1 == labels[l_array[0]]):
