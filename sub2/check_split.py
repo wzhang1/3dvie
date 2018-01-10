@@ -11,6 +11,7 @@ with open("../data/image_dev.txt") as fp:
 
 #print(labels)
 correct = 0
+correct1 = 0
 
 wrong = 0
 # be careful, some of the model are traine with background classes
@@ -28,6 +29,8 @@ with open("../sub1/new500x500-ep11.csv") as fp:
         #print(predict)
         predict2 = int(l_array[1][2]) + 1
         #print(predict2)
+        if (predict1 == labels[l_array[0]]):
+            correct1 = correct1 + 1
         
         if (predict2 == labels[l_array[0]] or predict1 == labels[l_array[0]]):
             correct = correct + 1
@@ -69,4 +72,6 @@ with open("./23new440x440-ep15.csv") as fp:
 print(correct)
 print(wrong)
 print(correct * 1.0 /(correct + wrong))
+print("top1")
+print(correct1 * 1.0 /(correct + wrong))
 
