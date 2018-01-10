@@ -19,7 +19,7 @@ def ch_dev(arg_params, aux_params, ctx):
     for k, v in aux_params.items():
         new_auxs[k] = v.as_in_context(ctx)
     return new_args, new_auxs
-
+'''
 def resize_short(src, size, interp=2):
     """Resizes shorter edge to size.
     """
@@ -42,7 +42,7 @@ def center_crop(src, size, interp=2):
 
     out = fixed_crop(src, x0, y0, new_w, new_h, size, interp)
     return out, (x0, y0, new_w, new_h)
-
+'''
 
 def predict(prefix, epoch, gpu_id, test_lst_file, img_sz, crop_sz, batch_sz=64):
     #prefix = '../model_level3/3dvie-resnet-18bn24'
@@ -99,10 +99,12 @@ def predict(prefix, epoch, gpu_id, test_lst_file, img_sz, crop_sz, batch_sz=64):
             #print(img_full_name)
             img = cv2.cvtColor(cv2.imread(img_full_name), cv2.COLOR_BGR2RGB)
             img = np.float32(img)
+            img = mx.nd.array(img)
             #(1080, 1920,3)
             #print(img.shape)
-            img = resize_short(img, 337 * 6 /5)
-            img = center_crop(src, (600, 337))
+            img = mx.img.resize_short(img, 337 * 6 /5)
+            #img = center_crop(src, (600, 337))
+            img = mx.img.center_crop(img, (337, 600))
 
 
             img = np.swapaxes(img, 0, 2)
@@ -145,9 +147,10 @@ def predict(prefix, epoch, gpu_id, test_lst_file, img_sz, crop_sz, batch_sz=64):
         img_full_name = test_folder + img_name
         img = cv2.cvtColor(cv2.imread(img_full_name), cv2.COLOR_BGR2RGB)
         img = np.float32(img)
+        img = mx.nd.array(img)
                     
-        img = resize_short(img, 337 * 6 /5)
-        img = center_crop(src, (600, 337))
+        img = mx.img.resize_short(img, 337 * 6 /5)
+        img = mx.image.center_crop(img, (600, 337))
 
         img = np.swapaxes(img, 0, 2)
         img = np.swapaxes(img, 1, 2)  # change to r,g,b order
